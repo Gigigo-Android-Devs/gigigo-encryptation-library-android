@@ -5,3 +5,5 @@
  * Aes256
  * Base64
  * An algorithm to encrypt and decrypt data:
+ 
+ ![GitHub Logo](/screen/EncryptionImageAlgorithm.png)
