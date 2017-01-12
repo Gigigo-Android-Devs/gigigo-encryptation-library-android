@@ -2,7 +2,8 @@ apply plugin: 'java'
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  compile 'junit:junit:4.12'
+
+  compile rootProject.ext.testLibraries.junit
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_7
