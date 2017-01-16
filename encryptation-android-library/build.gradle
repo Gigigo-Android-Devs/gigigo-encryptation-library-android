@@ -1,5 +1,9 @@
 apply plugin: 'com.android.library'
 
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.Gigigo-Android-Devs'
+
 android {
   compileSdkVersion rootProject.ext.androidCompileSdkVersion
   buildToolsVersion rootProject.ext.androidBuildToolsVersion
@@ -30,11 +34,8 @@ dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
   compile 'com.android.support:appcompat-v7:23.0.0'
+  testCompile 'junit:junit:4.12'
+  
   compile project(':encryptation-java-library')
 
-  androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-    exclude group: 'com.android.support', module: 'support-annotations'
-  })
-
-  testCompile 'junit:junit:4.12'
 }
