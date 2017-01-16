@@ -1,1 +1,1 @@
-include ':encryptation-java-library', ':encryptation-android-library'
+include ':app', ':encryptation-java-library', ':encryptation-android-library'

@@ -12,7 +12,7 @@ android {
     minSdkVersion rootProject.ext.androidMinSdkVersion
     targetSdkVersion rootProject.ext.androidTargetSdkVersion
     versionCode generateVersionCode()
-    versionName generateVersionName(2,3,8)
+    versionName generateVersionName(2, 3, 8)
 
     testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
   }
@@ -21,6 +21,10 @@ android {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
+  }
+
+  lintOptions {
+    abortOnError false
   }
 
   compileOptions {
@@ -33,9 +37,8 @@ android {
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
 
-  compile 'com.android.support:appcompat-v7:23.0.0'
-  testCompile 'junit:junit:4.12'
-  
-  compile project(':encryptation-java-library')
+  compile rootProject.ext.libraries.androidSupportV7
+  compile rootProject.ext.modules.encryptationJavaLibrary
 
+  testCompile rootProject.ext.testLibraries.junit
 }

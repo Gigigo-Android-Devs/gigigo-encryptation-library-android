@@ -6,7 +6,8 @@ group='com.github.Gigigo-Android-Devs'
 
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
-  testCompile 'junit:junit:4.12'
+
+  testCompile rootProject.ext.testLibraries.junit
 }
 
 sourceCompatibility = JavaVersion.VERSION_1_7
