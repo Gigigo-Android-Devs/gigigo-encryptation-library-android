@@ -11,6 +11,6 @@
 
 To use this library:
 ```gradle
-compile com.github.Gigigo-Android-Devs.gigigo-encryptation-util:encryptation-java-library:1.0
-compile com.github.Gigigo-Android-Devs.gigigo-encryptation-util:encryptation-android-library:1.0
+compile 'com.github.Gigigo-Android-Devs.gigigo-encryptation-util:encryptation-android-library:1.0.3'
+compile 'com.github.Gigigo-Android-Devs.gigigo-encryptation-util:encryptation-java-library:1.0.3'
 ```
